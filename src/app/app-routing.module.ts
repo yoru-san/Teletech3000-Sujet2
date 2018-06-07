@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { HomePageComponent } from './home-page/home-page.component';
 import { AuthGuard } from './auth.guard';
-import { PageDeProfilComponent } from './page-de-profil/page-de-profil.component';
+import { IndexComponent } from './index/index.component';
+import { ProfilComponent } from './profil/profil.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomePageComponent
+    component: IndexComponent
   },
   {
     path: '**',
@@ -17,7 +17,7 @@ const routes: Routes = [
   {
     path: 'profil',
     canActivate: [AuthGuard], 
-    component: PageDeProfilComponent
+    component: ProfilComponent
   },
 ];
 
