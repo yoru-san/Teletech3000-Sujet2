@@ -1,4 +1,4 @@
-#conteneur {
+#conteneur, .chiffres {
     display: flex;
     justify-content: space-around;
 }
@@ -11,8 +11,26 @@
     font-size: 20px;
 }
 
+<<<<<<< HEAD
 
 
 // #chiffres-cles {
 //     background-image: url("../../assets/img/bureau.png");
 // }
+=======
+#chiffres-cles {
+    background-image: url("../../assets/img/bureau2.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 400px;
+    z-index: 0;
+}
+
+.chiffres {
+    padding-top: 10px;
+    background-color: white;
+    opacity: 0.5;
+    filter: blur(0.1em);
+    z-index: 999;
+}
+>>>>>>> 04ac188b12d414d0b69b984a02452cce1a53eb62
