@@ -1,0 +1,26 @@
+#social-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    
+}
+footer {
+    background-color: #ededed;
+}
+
+.center {
+    text-align: center;
+}
+
+#contact-text {
+    font-size: 20px;
+}
+
+.social-logo {
+    padding-left: 2em;
+    img {
+        height: 3em;
+    }
+
+}
