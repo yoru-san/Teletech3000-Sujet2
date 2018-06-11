@@ -1,6 +1,9 @@
 #social-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    
 }
 footer {
     background-color: #ededed;
@@ -14,6 +17,10 @@ footer {
     font-size: 20px;
 }
 
-.social-logo img {
-    height: 3em;
+.social-logo {
+    padding-left: 2em;
+    img {
+        height: 3em;
+    }
+
 }
