@@ -10,6 +10,7 @@ export class HeaderComponent implements OnInit {
 
   private showLogin = false;
   private loggedIn = false;
+  private name = null;
 
   constructor(
     private Auth: AuthService
@@ -22,6 +23,12 @@ export class HeaderComponent implements OnInit {
         this.showLogin = false;
       }
     });
+
+    if (this.loggedIn){
+      this.Auth.getUser().subscribe(response => {
+        this.name = response.name;
+      });
+    }
   }
 
   onConnectClick() {

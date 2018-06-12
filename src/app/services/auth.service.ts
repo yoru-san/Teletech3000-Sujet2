@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import { Router } from '@angular/router';
 
@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class AuthService {
 
   public AuthStatus = new BehaviorSubject<boolean>(localStorage.loggedIn);
+
 
   constructor(
     private http: HttpClient,
@@ -28,7 +29,7 @@ export class AuthService {
     localStorage.loggedIn = value;
   }
 
-  getUser(){
+  getUser(): Observable<any> {
     return this.http.get('https://tp-angular-d227e.firebaseio.com/users.json');
   }
 
