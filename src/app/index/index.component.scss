@@ -1,4 +1,5 @@
 @import "../../styles.scss";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 .container, .chiffres {
     display: flex;
@@ -92,7 +93,9 @@
     margin: 5%;
 
     h3 {
-        font-family: $font-style-title;
+        font-size: 1.5em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
     }
 
     p, span {
