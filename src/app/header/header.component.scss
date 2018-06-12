@@ -1,28 +1,19 @@
 @import "../../styles.scss";
 
-.connecter{
-    order: 2;
-    margin-left: 60%;  
-    margin-top: 1em;
-    color: white;
-    font-size: 2em; 
-    
-}
-
-.imgnav{
+.imgnav {
     order: 1;
     height: 6em;
     width: 30em;
-
 }
 
 
 .connexion {
     margin-left: 85%;  
     margin-top: 1em;
-    font-size: 1.7em; 
-    position: fixed;
-    font-family: $font-style-title;  
+    font-size: 1.1em; 
+    position: fixed;;
+    font-family: $font-style-text;
+    font-weight: bold;      
     color: white;
 }
 
