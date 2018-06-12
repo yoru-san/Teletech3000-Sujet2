@@ -1,3 +1,5 @@
+@import "../../styles.scss";
+
 .container, .chiffres {
     display: flex;
     justify-content: space-around;
@@ -68,6 +70,10 @@
 
     .container {
         padding-bottom: 60px;
+    }
+
+    .center {
+        font-family: $font-style-text;
     }
 
 }
