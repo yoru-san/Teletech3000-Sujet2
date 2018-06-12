@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import {HttpClient} from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,8 @@ export class AuthService {
   public AuthStatus = new BehaviorSubject<boolean>(false);
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private router: Router
   ) { }
 
   login(form) {
@@ -34,6 +36,10 @@ export class AuthService {
       this.changeAuthStatus(true);
       console.log("Logged in!");
       this.AuthStatus.subscribe(value => console.log(value));
+      this.router.navigateByUrl('/profile');
+    }
+    else{
+      console.log("Failed to log in");
     }
   }
 }
