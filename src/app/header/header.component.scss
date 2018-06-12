@@ -1,16 +1,24 @@
 @import "../../styles.scss";
 
+.imgnav {
+    order: 1;
+    height: 6em;
+    width: 30em;
+}
+
+
 .connexion {
-    margin-left: 65%;  
+    margin-left: 85%;  
     margin-top: 1em;
-    font-size: 1.7em; 
-    position: fixed;
-    font-family: $font-style-title;  
+    font-size: 1.1em; 
+    position: fixed;;
+    font-family: $font-style-text;
+    font-weight: bold;      
     color: white;
 }
 
 .logo-nav {
-    border: 1px  solid violet;
+   
     height: 5em;
 }
 
@@ -19,6 +27,10 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: white;
-    opacity: 0.1;
+    background: rgba(83, 83, 83, 0.432);
+    display: flex;
+}
+header{
+
+
 }
