@@ -16,16 +16,21 @@ export class LoginComponent implements OnInit {
 
   private error = null;
 
+  private loggedIn = false;
+
   constructor(
     private Auth: AuthService,
     private router: Router
   ) { }
 
   ngOnInit() {
+    this.Auth.AuthStatus.subscribe(
+      value => this.loggedIn = value
+    );
   }
 
   onSubmit(){
-    this.Auth.login(this.form)
+    this.Auth.login(this.form);
     // .subscribe(
     //   data => this.handleResponse(data),
     //   error => this.handleError(error)
