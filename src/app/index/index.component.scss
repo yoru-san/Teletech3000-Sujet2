@@ -9,18 +9,6 @@
     text-align: center;
 }
 
-#activites{
-    width: 80%;
-    flex: 1;
-    margin-left: 10%;
-    margin-right: 10%; 
-}
-
-#contact {
-    width: 95%;
-    margin: 5%;
-}
-
 .title-text {
     font-size: 20px;
     text-align: center;
@@ -78,9 +66,10 @@
 }
 
 #activites {
-    width: 75%;
+    width: 80%;
     flex: 1;
-
+    margin-left: 10%;
+    margin-right: 10%; 
 
     .container {
         padding-bottom: 60px;
@@ -92,3 +81,12 @@
 
 }
 
+#contact {
+    width: 95%;
+    margin: 5%;
+
+    .center {
+        font-family: $font-style-text;
+    }
+    
+}
