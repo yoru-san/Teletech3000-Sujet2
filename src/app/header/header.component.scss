@@ -47,7 +47,7 @@ nav {
    
         height: 5em;
     }
-    .connexion {
+    a.connexion {
         margin-left: 83%;  
         margin-top: 1em;
         font-size: 1.1em; 
@@ -72,10 +72,10 @@ nav {
    
         height: 4em;
     }
-    .connexion {
+    a.connexion {
         margin-left: 83%;  
         margin-top: 1em;
-        font-size: 0.9em !important; 
+        font-size: 0.9em ; 
         position: fixed;;
         font-family: $font-style-text;
         font-weight: bold;      
@@ -96,10 +96,10 @@ nav {
    
         height: 3em;
     }
-    .connexion {
+    a.connexion {
         margin-left: 80%;  
         margin-top: 1em;
-        font-size: 0.8em !important; 
+        font-size: 0.8em; 
         position: fixed;;
         font-family: $font-style-text;
         font-weight: bold;      
@@ -121,10 +121,10 @@ nav {
    
         height: 2em;
     }
-    .connexion {
+    a.connexion {
         margin-left: 80%;  
         margin-top: 1em;
-        font-size: 0.6em !important; 
+        font-size: 0.6em; 
         position: fixed;;
         font-family: $font-style-text;
         font-weight: bold;      
