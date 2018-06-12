@@ -45,8 +45,8 @@
     background-image: url("../../assets/img/photo.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
-    height: 35em;
+    background-size: 100%;
+    height: 40em;
 }
 
 .btn {
@@ -99,7 +99,30 @@
         font-family: $font-style-title;
     }
 
-    p {
+    p, span {
         font-family: $font-style-text;
+    }
+}
+
+
+@media screen and (max-width: 1300px){
+
+    #photo {
+        background-image: url("../../assets/img/photo.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+        height: 50em;
+    }
+}
+
+@media screen and (max-width: 900px){
+
+    #photo {
+        background-image: url("../../assets/img/photo.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+        height: 33em;
     }
 }

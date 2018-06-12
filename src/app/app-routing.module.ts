@@ -4,7 +4,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { AuthGuard } from './auth.guard';
 import { IndexComponent } from './index/index.component';
 import { ProfileComponent } from './profile/profile.component';
-import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
@@ -12,12 +11,8 @@ const routes: Routes = [
     component: IndexComponent
   },
   {
-    path: 'login',
-    component: LoginComponent
-  },
-  {
     path: 'profile',
-    canActivate: [AuthGuard],
+    //canActivate: [AuthGuard],
     component: ProfileComponent
   },
   {
