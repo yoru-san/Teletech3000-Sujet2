@@ -42,6 +42,15 @@
 
 }
 
+.transform{
+    margin-top: 20%;
+    margin-left: 20%;
+    margin-right: 20%;    
+    background: rgba(202, 202, 202, 0.603);
+    display: inline-block    !important;
+
+}
+
 #photo {
     background-image: url("../../assets/img/photo.jpg");
     background-repeat: no-repeat;
@@ -54,7 +63,7 @@
     border-radius: 5px;
     border: none;
     box-shadow: 1px 1px 1px grey;
-    width: 35%;
+    width: 50%;
     padding: 0.3em 0 0.3em 0;
     color: white;
 }
@@ -82,11 +91,11 @@
     }
     
     h3 {
-        font-family: $font-style-title;
+        font-family: 'Montserrat', sans-serif;
     }
 
     p {
-        font-family: $font-style-text;
+        font-family: 'Montserrat', sans-serif;
         text-align: center;
         word-spacing: normal;
     }
@@ -94,7 +103,7 @@
 }
 
 #contact {
-    margin: 5%;
+    margin: 3%;
 
     h3 {
         font-size: 1.5em;
@@ -103,7 +112,7 @@
     }
 
     p, span {
-        font-family: $font-style-text;
+        font-family: 'Montserrat', sans-serif;;
     }
 }
 
