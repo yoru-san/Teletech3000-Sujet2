@@ -1,6 +1,7 @@
 @import "../../styles.scss";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
+
 .container, .chiffres {
     display: flex;
     justify-content: space-around;
@@ -25,11 +26,10 @@
 }
 
 #chiffres-cles {
-
     background-image: url("../../assets/img/bureau2.jpg");
     background-repeat: no-repeat;
-    background-size: cover; 
-    height: 400px;
+    background-size: 100%; 
+    height: 40em;
     z-index: 0;
 }
 
@@ -42,13 +42,28 @@
 
 }
 
-.transform{
-    margin-top: 20%;
-    margin-left: 20%;
-    margin-right: 20%;    
-    background: rgba(202, 202, 202, 0.603);
-    display: inline-block    !important;
+.transform {
+    margin-top: 5%;
+    margin-left: 15%;
+    background: rgba(255, 255, 255, 0.603);
+    display: inline-block !important;
+    font-family: 'Montserrat', sans-serif;
 
+    h1 {
+        font-size: 4em;
+        font-weight: 400;
+        color: #454545;
+        display: inline-flex;
+
+        .bold {
+            font-weight: 700;
+        }
+    }
+
+    p {
+        font-size: 2em;
+        color: #454545;
+    }
 }
 
 #photo {
