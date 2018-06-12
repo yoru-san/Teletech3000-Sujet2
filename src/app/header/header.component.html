@@ -3,7 +3,7 @@
         <img class="logo-nav" src="../../assets/img/LogoT_W.png" alt="Logo de Teletech'3000">
         <a *ngIf="!loggedIn" class="connexion" (click)="onConnectClick()">Se connecter</a>
         <a *ngIf="loggedIn" class="profile" routerLink="/profile">Profil</a>
-        <a *ngIf="loggedIn" class="connexion" (click)="onConnectClick()">Se déconnecter</a>
+        <a *ngIf="loggedIn" class="connexion" (click)="onDeconnectClick()">Se déconnecter</a>
         
     </nav>
     <app-login [hidden]="!showLogin"></app-login>
