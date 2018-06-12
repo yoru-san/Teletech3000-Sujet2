@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  private showLogin = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onConnectClick() {
+    this.showLogin = !this.showLogin;
   }
 
 }
