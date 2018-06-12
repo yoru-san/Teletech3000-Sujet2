@@ -27,5 +27,8 @@ export class HeaderComponent implements OnInit {
   onConnectClick() {
     this.showLogin = !this.showLogin;
   }
+  onDeconnectClick() {
+    this.Auth.logout();
+  }
 
 }

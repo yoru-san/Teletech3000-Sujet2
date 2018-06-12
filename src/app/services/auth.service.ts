@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
-  public AuthStatus = new BehaviorSubject<boolean>(false);
+  public AuthStatus = new BehaviorSubject<boolean>(localStorage.loggedIn);
 
   constructor(
     private http: HttpClient,
@@ -25,6 +25,7 @@ export class AuthService {
 
   changeAuthStatus(value: boolean){
     this.AuthStatus.next(value);
+    localStorage.loggedIn = value;
   }
 
   getUser(){
@@ -41,5 +42,11 @@ export class AuthService {
     else{
       console.log("Failed to log in");
     }
+  }
+
+  logout(){
+    localStorage.loggedIn = false;
+    this.AuthStatus.next(false);
+    this.router.navigateByUrl("/");
   }
 }
