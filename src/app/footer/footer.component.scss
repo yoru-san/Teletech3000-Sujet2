@@ -29,3 +29,36 @@ footer {
     }
 
 }
+@media screen and (max-width: 1600px){
+    img {
+        height: 4.5em !important;
+    }
+    p {
+        font-size: 1.1em !important;
+    }
+}
+@media screen and (max-width: 1300px){
+    img {
+        height: 4em !important;
+    }
+    p {
+        font-size: 0.9em !important;
+    }
+}
+@media screen and (max-width: 900px){
+    img {
+        height: 3.5em !important;
+    }
+    p {
+        font-size: 0.8em !important;
+    }
+}
+@media screen and (max-width: 660px){
+    img {
+        height: 3em !important;
+    }
+    p {
+        font-size: 0.6em !important;
+    }
+}
+

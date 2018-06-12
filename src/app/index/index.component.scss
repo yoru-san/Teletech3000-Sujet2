@@ -15,7 +15,7 @@
 }
 
 .title-text {
-    font-size: 30px;
+    font-size: 2em;
     text-align: center;
     margin-bottom: 5%;
     margin-top: 5%;
@@ -39,6 +39,7 @@
     margin-right: 20%;    
     background: rgba(202, 202, 202, 0.603);
     display: inline-block    !important;
+    font-family: 'Montserrat', sans-serif;
 
 }
 .chiffres {
@@ -89,6 +90,7 @@
     width: 40%;
     padding: 0.3em 0 0.3em 0;
     color: white;
+    font-size: 1.1em;
 }
 
 .red {
@@ -140,7 +142,9 @@
 }
 
 @media screen and (max-width: 1600px){
-
+    #chiffres-cles {
+        height: 30em;
+    }
     .transform {
         margin-top: 10%;
         margin-left: 15%;
@@ -170,6 +174,12 @@
 
 
 @media screen and (max-width: 1300px){
+    .title-text {
+        font-size: 1.5em;
+    }
+    .btn {
+        font-size: 0.8em;
+    }
 
     #photo {
         background-image: url("../../assets/img/photo.jpg");
@@ -178,11 +188,17 @@
         background-size: 100%;
         height: 50em;
     }
+    h3{
+        font-size: 1.3em !important;
+    }
     p{
         font-size: 1em;
     }
     #img-icon {
         height: 50px;
+    }
+    #chiffres-cles {
+        height: 25em;
     }
     .transform {
         margin-top: 10%;
@@ -211,7 +227,12 @@
 }
 
 @media screen and (max-width: 900px){
-
+    .title-text {
+        font-size: 1.3em;
+    }
+    .btn {
+        font-size: 0.6em;
+    }
     #photo {
         background-image: url("../../assets/img/photo.jpg");
         background-repeat: no-repeat;
@@ -219,14 +240,20 @@
         background-size: 100%;
         height: 33em;
     }
+    h3{
+        font-size: 1.1em !important;
+    }
     p{
         font-size: 0.8em
     }
     #img-icon {
         height: 40px;
     }
+    #chiffres-cles {
+        height: 18em;
+    }
     .transform {
-        margin-top: 10%;
+        margin-top: 15%;
         margin-left: 15%;
         margin-right: 15%;
         background: rgba(255, 255, 255, 0.603);
@@ -251,6 +278,10 @@
     }
 }
 @media screen and (max-width: 660px){
+    .title-text {
+        font-size: 1.1em;
+    }
+
 
     #photo {
         background-image: url("../../assets/img/photo.jpg");
@@ -259,14 +290,20 @@
         background-size: 100%;
         height: 25em;
     }
+    h3{
+        font-size: 1em !important;
+    }
     p{
         font-size: 0.6em
     }
     #img-icon {
         height: 30px;
     }
+    #chiffres-cles {
+        height: 14em;
+    }
     .transform {
-        margin-top: 10%;
+        margin-top: 15%;
         margin-left: 15%;
         margin-right: 15%;
         background: rgba(255, 255, 255, 0.603);
