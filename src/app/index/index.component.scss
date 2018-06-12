@@ -74,19 +74,25 @@
     .container {
         padding-bottom: 60px;
     }
-
-    .center {
-        font-family: $font-style-text;
+    
+    h3 {
+        font-family: $font-style-title;
     }
 
+    p {
+        font-family: $font-style-text;
+    }
 }
 
 #contact {
     width: 95%;
     margin: 5%;
 
-    .center {
+    h3 {
+        font-family: $font-style-title;
+    }
+
+    p {
         font-family: $font-style-text;
     }
-    
 }
