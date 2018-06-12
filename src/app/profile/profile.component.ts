@@ -9,13 +9,7 @@ import { Router } from '@angular/router';
 })
 export class ProfileComponent implements OnInit {
 
-  private profile = {
-    lastname: null,
-    firstname: null,
-    email: null,
-    password: null
-
-  };
+  private profile = null;
 
   constructor(
     private Auth: AuthService,
@@ -23,7 +17,9 @@ export class ProfileComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-
+    this.Auth.getUser().subscribe(response => {
+      this.profile = response;
+    });
   }
 
 }
