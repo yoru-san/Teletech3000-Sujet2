@@ -1,7 +1,9 @@
 <header>
     <nav>
         <img class="logo-nav" src="../../assets/img/LogoT_W.png" alt="Logo de Teletech'3000">
-        <a class="connexion" (click)="onConnectClick()">Se Connecter</a>
+        <a *ngIf="!loggedIn" class="connexion" (click)="onConnectClick()">Se Connecter</a>
+        <a *ngIf="loggedIn" class="connexion" (click)="onConnectClick()">Connecté</a>
+        
     </nav>
     <app-login [hidden]="!showLogin"></app-login>
   </header>
