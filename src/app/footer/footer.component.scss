@@ -30,35 +30,52 @@ footer {
 
 }
 @media screen and (max-width: 1600px){
-    img {
-        height: 4.5em !important;
+    .social-logo {
+        img {
+            height: 4.5em ;
+        }
     }
-    p {
-        font-size: 1.1em !important;
+    footer {
+        p {
+            font-size: 1.1em ;
+        }
     }
 }
+    
 @media screen and (max-width: 1300px){
-    img {
-        height: 4em !important;
+    .social-logo {
+        img {
+            height: 4em;
+        }
     }
-    p {
-        font-size: 0.9em !important;
+    footer {
+        p {
+            font-size: 0.9em ;
+        }
     }
 }
 @media screen and (max-width: 900px){
-    img {
-        height: 3.5em !important;
+    .social-logo {
+        img {
+            height: 3.5em ;
+        }
     }
-    p {
-        font-size: 0.8em !important;
+    footer {
+        p {
+            font-size: 0.8em ;
+        }
     }
 }
 @media screen and (max-width: 660px){
-    img {
-        height: 3em !important;
+    .social-logo {
+        img {
+            height: 3em ;
+        }
     }
-    p {
-        font-size: 0.6em !important;
+    footer {
+        p {
+            font-size: 0.6em;
+        }
     }
 }
 
