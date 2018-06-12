@@ -74,9 +74,15 @@
     .container {
         padding-bottom: 60px;
     }
+    
+    h3 {
+        font-family: $font-style-title;
+    }
 
-    .center {
+    p {
         font-family: $font-style-text;
+        text-align: center;
+        word-spacing: normal;
     }
 
 }
@@ -85,8 +91,11 @@
     width: 95%;
     margin: 5%;
 
-    .center {
+    h3 {
+        font-family: $font-style-title;
+    }
+
+    p {
         font-family: $font-style-text;
     }
-    
 }
