@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -8,10 +9,19 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   private showLogin = false;
+  private loggedIn = false;
 
-  constructor() { }
+  constructor(
+    private Auth: AuthService
+  ) { }
 
   ngOnInit() {
+    this.Auth.AuthStatus.subscribe(value => {
+      this.loggedIn = value;
+      if (this.loggedIn){
+        this.showLogin = false;
+      }
+    });
   }
 
   onConnectClick() {
