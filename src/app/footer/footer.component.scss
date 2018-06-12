@@ -1,3 +1,5 @@
+@import "../../styles.scss";
+
 #social-container {
     display: flex;
     justify-content: center;
@@ -7,14 +9,11 @@
 }
 footer {
     background-color: #ededed;
+    font-family: $font-style-title;
 }
 
 .center {
     text-align: center;
-}
-
-#contact-text {
-    font-size: 20px;
 }
 
 .social-logo {
