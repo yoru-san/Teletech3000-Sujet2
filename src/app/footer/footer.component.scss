@@ -3,13 +3,18 @@
 #social-container {
     display: flex;
     justify-content: center;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    
+    padding-top: 5em;   
+    padding-left: 5em;
+ 
 }
 footer {
+    height: 15em;
     background-color: #ededed;
     font-family: $font-style-title;
+
+    p {
+        font-size: 1.2em;
+    }
 }
 
 .center {
@@ -17,9 +22,10 @@ footer {
 }
 
 .social-logo {
-    padding-left: 2em;
+    padding-right: 4em;
+
     img {
-        height: 3em;
+        height: 5em;
     }
 
 }
