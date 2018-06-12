@@ -1,10 +1,6 @@
 @import "../../styles.scss";
 
-.imgnav {
-    order: 1;
-    height: 6em;
-    width: 30em;
-}
+
 
 
 .connexion {
@@ -29,4 +25,81 @@ nav {
     width: 100%;
     background: rgba(83, 83, 83, 0.432);
     display: flex;
+}
+
+
+
+
+@media screen and (max-width: 900px){
+    nav {
+        height: 5em;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(83, 83, 83, 0.432);
+        display: flex;
+    }
+
+    .logo-nav {
+   
+        height: 4em;
+    }
+    .connexion {
+        margin-left: 83%;  
+        margin-top: 1em;
+        font-size: 1em; 
+        position: fixed;;
+        font-family: $font-style-text;
+        font-weight: bold;      
+        color: white;
+    }
+}
+@media screen and (max-width: 630px){
+    nav {
+        height: 4em;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(83, 83, 83, 0.432);
+        display: flex;
+    }
+
+    .logo-nav {
+   
+        height: 3em;
+    }
+    .connexion {
+        margin-left: 80%;  
+        margin-top: 1em;
+        font-size: 0.8em; 
+        position: fixed;;
+        font-family: $font-style-text;
+        font-weight: bold;      
+        color: white;
+    }
+}
+
+@media screen and (max-width: 400px){
+    nav {
+        height: 3.5em;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(83, 83, 83, 0.432);
+        display: flex;
+    }
+
+    .logo-nav {
+   
+        height: 2em;
+    }
+    .connexion {
+        margin-left: 80%;  
+        margin-top: 1em;
+        font-size: 0.6em; 
+        position: fixed;;
+        font-family: $font-style-text;
+        font-weight: bold;      
+        color: white;
+    }
 }
