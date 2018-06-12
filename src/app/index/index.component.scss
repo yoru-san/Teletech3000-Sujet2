@@ -81,13 +81,17 @@
     width: 75%;
     flex: 1;
 
-
     .container {
         padding-bottom: 60px;
     }
 
     .center {
         font-family: $font-style-text;
+    }
+
+    p {
+        text-align: center;
+        word-spacing: normal;
     }
 
 }
