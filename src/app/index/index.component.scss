@@ -114,16 +114,18 @@
 
 .chiffre-2018 {
     margin-top: 4%;
-    margin-left: 15%;
-    padding-bottom: 10%;
+    margin-left: 6%;
     background: rgba(255, 255, 255, 0.603);
-    width: 70%;
+    width: 85%;
     display: inline-block;
+    padding-left: 5em;
 
     h1 {
         font-size: 2em;
         font-weight: 400;
         display: inline-flex;
+        padding-right: 4em;
+        padding-bottom: 1em;
     }
 
     .bold {
@@ -131,29 +133,43 @@
     }
 
     span {
-        font-size: 1.5em;
+        font-size: 3.2em;
         font-weight: 700;
+        z-index: 2;
+        position: relative;
+        right: 1.9em;
+        bottom: 0.9em; 
+    }
+    #euro {
+        font-size: 1.6em;
+        font-weight: 700;
+        z-index: 2;
+        position: relative;
+        right: 1.1em;
+        bottom: 2.6em; 
+    }
+
+    .container-chiffre-2018 {
+        flex-direction: column;
     }
 
     .hexagon {
         background-size: 100%;
         background-repeat: no-repeat;
         color: white;
-        font-size: 4em;
-        font-weight: 700;
-        display: inline;
+        
+        z-index : 1;
     }
 
-    #blue {
-        background-image: url("../../assets/icons/hexagon-blue.png");
+    .titre-chiffre, .titre-chiffre-3 {
+        font-size: 1.5em;
+        font-weight: 900;
+        padding-right: 2em;
     }
 
-    #yellow {
-        background-image: url("../../assets/icons/hexagon-yellow.png");
-    }
-
-    #red {
-        background-image: url("../../assets/icons/hexagon-red.png");   
+    .titre-chiffre-3 {
+        position: relative;
+        bottom: 2em;
     }
 }
 
