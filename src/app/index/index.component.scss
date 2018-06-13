@@ -200,17 +200,35 @@
             font-size: 2em;
         }
     }
+
     .chiffre-2018 {
-        margin-top: 4%;
-        margin-left: 15%;
-        padding-bottom: 10%;
-        width: 70%;   
+        width: 80%;
+        height: 20em;  
+        padding-left: 5.5em;
+          
         h1 {
             font-size: 1.9em;
-        }    
+        } 
         span {
-            font-size: 1.4em;
+            font-size: 3em;
+            right: 1.8em;
+            bottom: 0.9em; 
         }
+        #euro {
+            font-size: 1.6em;
+            right: 1.1em;
+            bottom: 2.6em; 
+        }  
+        .hexagon {
+            img{
+                height: 7em
+            }
+        }
+    
+        .titre-chiffre, .titre-chiffre-3 {
+            font-size: 1.2em;
+            padding-right: 2em;
+        }    
     }
 }
 
@@ -250,16 +268,31 @@
         }
     }
     .chiffre-2018 {
-        margin-top: 4%;
-        margin-left: 15%;
-        padding-bottom: 10%;
-        width: 70%;   
+        width: 70%;
+        height: 14em;
         h1 {
-            font-size: 1.7em;
-        }    
+            font-size: 1.6em;
+        } 
         span {
-            font-size: 1.3em;
+            font-size: 2.2em;
+            right: 1.79em;
+            bottom: 0.9em; 
         }
+        #euro {
+            font-size: 1.2em;
+            right: 1.1em;
+            bottom: 2.6em; 
+        }  
+        .hexagon {
+            img{
+                height: 5em
+            }
+        }
+    
+        .titre-chiffre, .titre-chiffre-3 {
+            font-size: 1.1em;
+            padding-right: 2em;
+        }    
     }
 }
 
@@ -298,17 +331,38 @@
             font-size: 1.18em;
         }
     }
+
     .chiffre-2018 {
-        margin-top: 4%;
-        margin-left: 15%;
-        padding-bottom: 10%;
-        width: 70%;   
+        width: 65%;
+        height: 10em;
+        padding-left: 6em;
+        
         h1 {
-            font-size: 1.5em;
-        }    
+            font-size: 1em;
+        } 
         span {
-            font-size: 1.1em;
+            font-size: 1.2em;
+            right: 1.79em;
+            bottom: 0.9em; 
         }
+        #euro {
+            font-size: 0.7em;
+            right: 1.1em;
+            bottom: 3em; 
+        }  
+        .hexagon {
+            img{
+                height: 3em
+            }
+        }
+        p {
+            font-size: 0.9em;
+        }
+    
+        .titre-chiffre, .titre-chiffre-3 {
+            font-size: 1.1em;
+            padding-right: 2em;
+        }    
     }
 }
 @media screen and (max-width: 660px) {
@@ -346,21 +400,40 @@
             font-size: 0.95em;
         }
     }
+
     .chiffre-2018 {
-        margin-top: 4%;
-        margin-left: 15%;
-        padding-bottom: 10%;
-        width: 70%;   
+        width: 65%;
+        height: 8em;
         h1 {
-            font-size: 1.3em;
-        }    
+            font-size: 0.8em;
+        } 
         span {
-            font-size: 0.9em;
+            font-size: 0.8em;
+            right: 1.8em;
+            bottom: 0.9em; 
         }
+        #euro {
+            font-size: 0.5em;
+            right: 1em;
+            bottom: 3.6em; 
+        }  
+        .hexagon {
+            img{
+                height: 2em
+            }
+        }
+        p {
+            font-size: 0.6em;
+        }
+    
+        .titre-chiffre, .titre-chiffre-3 {
+            font-size: 1.1em;
+            padding-right: 2em;
+        }    
     }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 480px){
     .title-text {
         font-size: 1em !important;
     }
@@ -392,16 +465,35 @@
             font-size: 0.65em;
         }
     }
+
     .chiffre-2018 {
-        margin-top: 4%;
-        margin-left: 15%;
-        padding-bottom: 10%;
-        width: 70%;   
+        width: 65%;
+        height: 6em;
         h1 {
-            font-size: 1.2em;
-        }    
+            font-size: 0.6em;
+        } 
         span {
-            font-size: 0.8em;
+            font-size: 0.6em;
+            right: 1.8em;
+            bottom: 0.9em; 
         }
+        #euro {
+            font-size: 0.25em;
+            right: 1em;
+            bottom: 4.2em; 
+        }  
+        .hexagon {
+            img{
+                height: 1.45em
+            }
+        }
+        p {
+            font-size: 0.6em;
+        }
+    
+        .titre-chiffre, .titre-chiffre-3 {
+            font-size: 1.1em;
+            padding-right: 2em;
+        }    
     }
 }
