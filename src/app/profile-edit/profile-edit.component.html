@@ -1,4 +1,5 @@
 <div id="profile">
+    <h3>Changer les informations</h3>
     <form #editForm=ngForm (ngSubmit)="onSubmit()">
         <label>Nom*</label>
         <input type="text" name="name" id="name" [(ngModel)]="form.name" required>
@@ -10,7 +11,7 @@
         <input type="password" name="new_password" id="new_password" [(ngModel)]="form.new_password" required>
         <label>Nouveau mot de passe (laisser vide pour garder le même)</label>
         <input type="password" name="password_confirm" id="password_confirm" [(ngModel)]="form.password_confirmation" required>
-        <button type="submit">Submit</button>
+        <button type="submit">Enregistrer</button>
       </form>
 </div>
 
