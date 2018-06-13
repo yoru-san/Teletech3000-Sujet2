@@ -1,7 +1,10 @@
 <section id="profile">
     <h3>Profil de l'utilisateur</h3>
     <div id="container">
-        <p>Nom : </p> {{profile.name}}
-        <p>Email : </p> {{profile.email}}
+        <p>Nom : {{profile.name}}</p> 
+        <p>Email : {{profile.email}}</p>
+
+        <button class="btn blue" routerLink="/edit-profile">Changer mes informations</button>
     </div>
+
 </section>
