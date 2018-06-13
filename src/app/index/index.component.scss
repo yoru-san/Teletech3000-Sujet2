@@ -80,6 +80,28 @@
     }   
 }
 
+.btn {
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 1px grey;
+    width: 40%;
+    padding: 0.3em 0;
+    color: white;
+    font-size: 1.1em;
+}
+
+.red {
+    background-color: #ed3d4a;
+}
+
+.yellow {
+    background-color: #ffa100;
+}
+
+.blue {
+    background-color: #004464;
+}
+
 /* Style de la section chiffres-clé */
 
 #chiffres-cles {
