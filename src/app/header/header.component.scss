@@ -11,7 +11,6 @@ nav {
     width: 100%;
     background: rgba(83, 83, 83, 0.432);
     display: flex;
-    font-family: $font-style-text;
     font-weight: bold;      
     color: white;
 }
@@ -33,7 +32,7 @@ nav {
 
 
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1300px) {
     nav {
         height: 5em;
         position: fixed;
@@ -50,7 +49,13 @@ nav {
         margin-left: 79%;  
         margin-top: 1em;
         font-size: 1.1em; 
+<<<<<<< HEAD
 
+=======
+        position: fixed;;
+        font-weight: bold;      
+        color: white;
+>>>>>>> bea6bfe1b923c3e2722a40b3e8843d2faa851c7d
     }
 }
 
@@ -71,7 +76,14 @@ nav {
     a.connexion {
         margin-left: 77%;          
         font-size: 0.9em ; 
+<<<<<<< HEAD
         }
+=======
+        position: fixed;;
+        font-weight: bold;      
+        color: white;
+    }
+>>>>>>> bea6bfe1b923c3e2722a40b3e8843d2faa851c7d
 }
 @media screen and (max-width: 630px){
     nav {
@@ -90,6 +102,12 @@ nav {
     a.connexion {
         margin-left: 76%;  
         font-size: 0.8em; 
+<<<<<<< HEAD
+=======
+        position: fixed;;
+        font-weight: bold;      
+        color: white;
+>>>>>>> bea6bfe1b923c3e2722a40b3e8843d2faa851c7d
     }
 }
 
@@ -104,15 +122,18 @@ nav {
     }
 
     .logo-nav {
+<<<<<<< HEAD
    
         height: 1.5em;
+=======
+        height: 2em;
+>>>>>>> bea6bfe1b923c3e2722a40b3e8843d2faa851c7d
     }
     a.connexion {
         margin-left: 80%;  
         margin-top: 1em;
         font-size: 0.6em; 
         position: fixed;;
-        font-family: $font-style-text;
         font-weight: bold;      
         color: white;
     }

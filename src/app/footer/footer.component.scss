@@ -10,7 +10,6 @@
 footer {
     height: 15em;
     background-color: #ededed;
-    font-family: $font-style-title;
 
     p {
         font-size: 1.2em;
@@ -29,20 +28,20 @@ footer {
     }
 
 }
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 1600px) {
     .social-logo {
         img {
-            height: 4.5em ;
+            height: 4.5em;
         }
     }
     footer {
         p {
-            font-size: 1.1em ;
+            font-size: 1.1em;
         }
     }
 }
     
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1300px) {
     .social-logo {
         img {
             height: 4em;
@@ -50,26 +49,26 @@ footer {
     }
     footer {
         p {
-            font-size: 0.9em ;
+            font-size: 0.9em;
         }
     }
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
     .social-logo {
         img {
-            height: 3.5em ;
+            height: 3.5em;
         }
     }
     footer {
         p {
-            font-size: 0.8em ;
+            font-size: 0.8em;
         }
     }
 }
-@media screen and (max-width: 660px){
+@media screen and (max-width: 660px) {
     .social-logo {
         img {
-            height: 3em ;
+            height: 3em;
         }
     }
     footer {
