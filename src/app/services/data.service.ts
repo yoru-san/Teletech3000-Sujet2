@@ -11,9 +11,25 @@ export class DataService {
   ) { }
 
   getLocations(){
+    this.seedLocations().subscribe();
     return this.http.get('https://b2-angular.firebaseio.com/kob2/locations.json');
   }
 
+  getKeyNumbers(){
+    this.seedLocations().subscribe();
+    return this.http.get('https://b2-angular.firebaseio.com/kob2/numbers.json');
+  }
+
+  seedKeyNumbers(){
+    return this.http.put('https://b2-angular.firebaseio.com/kob2/numbers.json', {
+      "year": "2018",
+      "offices": "3",
+      "consultants": "86",
+      "turnover": "36",
+      "scale": "m",
+      "currency": "€"
+    });
+  }
 
   seedLocations(){
     return this.http.put('https://b2-angular.firebaseio.com/kob2/locations.json', 

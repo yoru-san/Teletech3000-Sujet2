@@ -18,19 +18,26 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
 
-    this.Auth.AuthStatus.subscribe(
-      value => {
+    this.Auth.AuthStatus.subscribe(value => {
         this.logged = value;
         console.log("Show profile: " + this.logged);
-      }
+        if (this.logged){
+          this.Auth.getUser().subscribe(user => {
+            this.showLogin = false;
+            this.name = user.name
+          },
+          error => console.log(error)
+        )}
+      },
+      error => console.log(error)
     )
   }
 
   onConnectClick() {
     this.showLogin = !this.showLogin;
   }
+  
   onDeconnectClick() {
     this.Auth.logout();
   }
-
 }
