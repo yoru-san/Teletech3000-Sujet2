@@ -86,7 +86,7 @@
     background-image: url("../../assets/img/bureau.jpg");
     background-repeat: no-repeat;
     background-size: 100%; 
-    height: 40em;
+    height: 35em;
     z-index: 0;
 }
 
@@ -111,6 +111,27 @@
     span {
         font-size: 1.5em;
         font-weight: 700;
+    }
+
+    .hexagon {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        color: white;
+        font-size: 4em;
+        font-weight: 700;
+        display: inline;
+    }
+
+    #blue {
+        background-image: url("../../assets/icons/hexagon-blue.png");
+    }
+
+    #yellow {
+        background-image: url("../../assets/icons/hexagon-yellow.png");
+    }
+
+    #red {
+        background-image: url("../../assets/icons/hexagon-red.png");   
     }
 }
 
