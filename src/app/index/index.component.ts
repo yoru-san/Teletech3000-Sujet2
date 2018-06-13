@@ -8,7 +8,7 @@ import { DataService } from '../services/data.service';
 })
 export class IndexComponent implements OnInit {
 
-  private cities = null;
+  private companies = null
   private numbers = null;
 
   constructor(
@@ -17,7 +17,7 @@ export class IndexComponent implements OnInit {
 
   ngOnInit() {
     this.Data.getLocations().subscribe(response => {
-      this.cities = response;
+      this.companies = response;
     },
       error => console.log(error)
     );

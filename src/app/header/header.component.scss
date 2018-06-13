@@ -72,7 +72,7 @@ nav {
         font-size: 0.9em ; 
         }
 }
-@media screen and (max-width: 630px){
+@media screen and (max-width: 660px){
     nav {
         height: 4em;
         position: fixed;
@@ -92,7 +92,7 @@ nav {
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 480px){
     nav {
         height: 3.5em;
         position: fixed;
@@ -104,7 +104,7 @@ nav {
 
     .logo-nav {
    
-        height: 1.5em;
+        height: 1.8em;
     }
     a.connexion {
         margin-left: 80%;

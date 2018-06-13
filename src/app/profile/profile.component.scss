@@ -2,18 +2,21 @@
 
 #profile {
     margin-top: 80px;
+
+    div {
+        text-align: center;
+    }
 }
 
 #container {
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom : 20%;
+    margin-bottom : 10%;
 }
 
 h3 {
     text-align: center;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 5%;
     font-size: 3em;
     font-family: 'Montserrat', sans-serif;
 }

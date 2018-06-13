@@ -1,5 +1,5 @@
-<div>
   <form #loginForm=ngForm (ngSubmit)="onSubmit()">
+      <h3>Connexion :</h3>
     <label for="email">Email</label>
     <input type="text" id="login_email" name="email"  placeholder="Votre email..." [(ngModel)]="form.email" required>
 
@@ -8,4 +8,3 @@
   
     <input type="submit" value="Se connecter">
   </form>
-</div>
