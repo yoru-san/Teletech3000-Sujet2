@@ -2,6 +2,7 @@
 
 .logo-nav {
     height: 5em;
+    cursor: pointer;
 }
 
 nav {
@@ -19,7 +20,8 @@ nav {
         font-size: 1.4em; 
         position: fixed;
         margin-left: 80%;  
-        margin-top: 1em;       
+        margin-top: 1em;
+        cursor: pointer;       
     }
 
     a.profile {
