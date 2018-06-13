@@ -30,7 +30,12 @@ export class AuthService {
   }
 
   getUser(): Observable<any> {
-    return this.http.get('https://tp-angular-d227e.firebaseio.com/users.json');
+    this.http.post('https://b2-angular.firebaseio.com/kob2/user.json', {
+      name: "Test",
+      email: "a@a.com",
+      password: "root"
+    })
+    return this.http.get('https://b2-angular.firebaseio.com/kob2/user.json');
   }
 
   handleResponse(response, form){
@@ -49,5 +54,12 @@ export class AuthService {
     localStorage.loggedIn = false;
     this.AuthStatus.next(false);
     this.router.navigateByUrl("/");
+  }
+
+  editUser(new_user){
+    this.http.post('https://b2-angular.firebaseio.com/kob2/user.json', new_user).subscribe(
+      response => console.log(response),
+      error => console.log(error)
+    );
   }
 }

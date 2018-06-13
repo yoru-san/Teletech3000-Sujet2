@@ -1,3 +1,16 @@
-<p>
-  profile-edit works!
-</p>
+<div id="profile">
+    <form #editForm=ngForm (ngSubmit)="onSubmit()">
+        <label>Name*</label>
+        <input type="text" name="name" id="name" [(ngModel)]="form.name" required>
+        <label>Email*</label>
+        <input type="email" name="email" id="email" [(ngModel)]="form.email" required>
+        <label>Current Password*</label>
+        <input type="password" name="password" id="password" [(ngModel)]="form.password" required>
+        <label>New Password (leave blank if you dont want to change)</label>
+        <input type="password" name="new_password" id="new_password" [(ngModel)]="form.new_password" required>
+        <label>Retype Password (leave blank if you dont want to change)</label>
+        <input type="password" name="password_confirm" id="password_confirm" [(ngModel)]="form.password_confirmation" required>
+        <button type="submit">Submit</button>
+      </form>
+</div>
+
