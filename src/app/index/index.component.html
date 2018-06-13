@@ -107,29 +107,13 @@
 <section id="contact">
   <p class="title-text">Contactez-<b>nous</b> !</p>
   <div class="container">
-    <div class="center">
-      <h3>{{cities[0].name}}</h3>
-      <p>{{cities[0].street}} <br>
-        {{cities[0].city}}
+    <div *ngFor="let company of companies" class="center">
+      <h3>{{company.name}}</h3>
+      <p>{{company.street}} <br>
+        {{company.city}}
       </p>
       <br>
-      <span>{{cities[0].phone}}</span>
-    </div>
-    <div class="center">
-      <h3>{{cities[1].name}}</h3>
-      <p>{{cities[1].street}} <br>
-        {{cities[1].city}}
-      </p>
-      <br>
-      <span>{{cities[1].phone}}</span>
-    </div>
-    <div class="center">
-      <h3>{{cities[2].name}}</h3>
-      <p>{{cities[2].street}} <br>
-        {{cities[2].city}}
-      </p>
-      <br>
-      <span>{{cities[2].phone}}</span>
+      <span>{{company.phone}}</span>
     </div>
   </div>
 </section>
