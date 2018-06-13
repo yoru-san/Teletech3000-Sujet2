@@ -8,13 +8,15 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
-  public AuthStatus = new BehaviorSubject<boolean>(localStorage.loggedIn);
+  public AuthStatus = new BehaviorSubject<boolean>(this.getAuthStatus());
 
 
   constructor(
     private http: HttpClient,
     private router: Router
-  ) { }
+  ) {
+    this.AuthStatus.subscribe(res => console.log("Auth Status:" + res));
+   }
 
   login(form) {
     this.getUser().subscribe(response => {
@@ -38,7 +40,7 @@ export class AuthService {
       this.changeAuthStatus(true);
       console.log("Logged in!");
       this.AuthStatus.subscribe(value => console.log(value));
-      this.router.navigateByUrl('/');
+      this.router.navigateByUrl("");
     }
     else{
       console.log("Failed to log in");
@@ -48,7 +50,7 @@ export class AuthService {
   logout(){
     localStorage.loggedIn = false;
     this.AuthStatus.next(false);
-    this.router.navigateByUrl("/");
+    this.router.navigateByUrl("");
   }
 
   editUser(new_user){
@@ -56,5 +58,14 @@ export class AuthService {
       response => {this.router.navigateByUrl('/profile')},
       error => console.log(error)
     );
+  }
+
+  getAuthStatus(){
+    if (localStorage.loggedIn == "true"){
+      return true;
+    }
+    else {
+      return false;
+    }
   }
 }

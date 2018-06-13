@@ -24,9 +24,7 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.Auth.AuthStatus.subscribe(
-      value => this.loggedIn = value
-    );
+
   }
 
   onSubmit(){
