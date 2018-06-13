@@ -9,8 +9,7 @@ import { Router } from '@angular/router';
 export class AuthService {
 
   public AuthStatus = new BehaviorSubject<boolean>(this.getAuthStatus());
-
-
+  
   constructor(
     private http: HttpClient,
     private router: Router
@@ -25,6 +24,7 @@ export class AuthService {
       console.log(error);
     });
   }
+
   handleLoginResponse(response, form){
     if (response.email === form.email && response.password === form.password){
       this.changeAuthStatus(true);
