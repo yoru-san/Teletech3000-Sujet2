@@ -1,6 +1,6 @@
 <header>
     <nav>
-        <img class="logo-nav" src="../../assets/img/LogoT_W.png" alt="Logo de Teletech'3000">
+        <img class="logo-nav" routerLink="/" src="../../assets/img/LogoT_W.png" alt="Logo de Teletech'3000">
         <a *ngIf="!logged" class="connexion" (click)="onConnectClick()">Se connecter</a>
         <a *ngIf="logged" class="profile" routerLink="/profile">{{name}}</a>
         <a *ngIf="logged" class="connexion" (click)="onDeconnectClick()">Se déconnecter</a>
