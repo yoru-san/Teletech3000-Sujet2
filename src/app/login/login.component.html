@@ -1,5 +1,5 @@
   <form #loginForm=ngForm (ngSubmit)="onSubmit()">
-    <p *ngIf="errorAuth" id="error">Erreur: mauvais identifiants, veuillez réssayer.</p>
+    <p *ngIf="error" id="error">Erreur: mauvais identifiants, veuillez réssayer.</p>
       <h3>Connexion :</h3>
     <label for="email">Email</label>
     <input type="text" id="login_email" name="email"  placeholder="Votre email..." [(ngModel)]="form.email" required>

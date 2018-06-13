@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
+import { error } from 'protractor';
 
 @Component({
   selector: 'app-login',
@@ -14,7 +15,7 @@ export class LoginComponent implements OnInit {
     password: null
   };
 
-  private error = null;
+  public error = false;
   private errorAuth: boolean;
   private loggedIn = false;
 
@@ -28,11 +29,11 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit(){
-    this.Auth.login(this.form);
-    // .subscribe(
-    //   data => this.handleResponse(data),
-    //   error => this.handleError(error)
-    // );
+    this.Auth.login(this.form, isSuccessful => {
+      if (!isSuccessful){
+        this.error = true;
+      }
+    });
   }
 
   handleResponse(data){

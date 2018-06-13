@@ -17,23 +17,25 @@ export class AuthService {
     this.AuthStatus.subscribe(res => console.log("Auth Status:" + res));
    }
 
-  login(form) {
+  login(form, callback) {
     this.getUser().subscribe(response => {
-      this.handleLoginResponse(response, form);
+      this.handleLoginResponse(response, form, callback);
     }, error => {
       console.log(error);
     });
   }
 
-  handleLoginResponse(response, form){
+  handleLoginResponse(response, form, callback){
     if (response.email === form.email && response.password === form.password){
       this.changeAuthStatus(true);
       console.log("Logged in!");
       this.AuthStatus.subscribe(value => console.log(value));
       this.router.navigateByUrl("");
+      callback(true);
     }
     else{
       console.log("Failed to log in");
+      callback(false);
     }
   }
 
