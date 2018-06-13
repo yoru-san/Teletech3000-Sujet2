@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   };
 
   private error = null;
-
+  private errorAuth: boolean;
   private loggedIn = false;
 
   constructor(

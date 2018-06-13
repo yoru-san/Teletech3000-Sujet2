@@ -1,5 +1,10 @@
 @import "../../styles.scss";
 
+p {
+ background-color: rgba(240, 18, 18, 0.384);
+ color: black;
+}
+
 form {
     position: fixed;
     top: 5em;
