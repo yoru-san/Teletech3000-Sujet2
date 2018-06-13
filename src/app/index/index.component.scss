@@ -15,10 +15,11 @@
 }
 
 .title-text {
-    font-size: 2em;
+   
     text-align: center;
     margin-bottom: 5%;
     margin-top: 5%;
+    font-size: 2em;
 }
 
 /* Style de la section présentation */
@@ -199,29 +200,41 @@
             font-size: 2em;
         }
     }
+    .chiffre-2018 {
+        margin-top: 4%;
+        margin-left: 15%;
+        padding-bottom: 10%;
+        width: 70%;   
+        h1 {
+            font-size: 1.9em;
+        }    
+        span {
+            font-size: 1.4em;
+        }
+    }
 }
 
 @media screen and (max-width: 1300px) {
     .title-text {
-        font-size: 1.5em;
+        font-size: 1.5em !important;
     }
     .btn {
         font-size: 0.8em;
     }
 
-    #photo {
+    #presentation {
         height: 50em;
     }
     #contact, #activites {
         h3 {
             font-size: 1.3em;
         }
-    }
-    p {
-        font-size: 1em;
-    }
-    #img-icon {
-        height: 50px;
+        p{
+            font-size: 1em;
+        }
+        #img-icon {
+            height: 50px;
+        }
     }
     #chiffres-cles {
         height: 25em;
@@ -236,28 +249,40 @@
             font-size: 2em;
         }
     }
+    .chiffre-2018 {
+        margin-top: 4%;
+        margin-left: 15%;
+        padding-bottom: 10%;
+        width: 70%;   
+        h1 {
+            font-size: 1.7em;
+        }    
+        span {
+            font-size: 1.3em;
+        }
+    }
 }
 
 @media screen and (max-width: 900px) {
     .title-text {
-        font-size: 1.3em;
+        font-size: 1.3em !important;
     }
     .btn {
         font-size: 0.6em;
     }
-    #photo {
+    #presentation {
         height: 33em;
     }
     #contact,#activites {
         h3 {
             font-size: 1.1em;
         }
-    }
-    p {
-        font-size: 0.8em
-    }
-    #img-icon {
-        height: 40px;
+        p{
+            font-size: 0.8em
+        }
+        #img-icon {
+            height: 40px;
+        }
     }
     #chiffres-cles {
         height: 18em;
@@ -267,30 +292,45 @@
         margin-left: 15%;
         margin-right: 15%;    
         h1 {
-            font-size: 1.7em;
+            font-size: 1.6em;
         }    
         p {
-            font-size: 1.2em;
+            font-size: 1.18em;
+        }
+    }
+    .chiffre-2018 {
+        margin-top: 4%;
+        margin-left: 15%;
+        padding-bottom: 10%;
+        width: 70%;   
+        h1 {
+            font-size: 1.5em;
+        }    
+        span {
+            font-size: 1.1em;
         }
     }
 }
 @media screen and (max-width: 660px) {
     .title-text {
-        font-size: 1.1em;
+        font-size: 1.1em !important;
     }
-    #photo {
+    #presentation {
         height: 25em;
+    }
+    .btn {
+        font-size: 0.4em;
     }
     #contact,#activites {
         h3{
             font-size: 1em;
         }
-    }
-    p{
-        font-size: 0.6em
-    }
-    #img-icon {
-        height: 30px;
+        p{
+            font-size: 0.6em
+        }
+        #img-icon {
+            height: 30px;
+        }
     }
     #chiffres-cles {
         height: 14em;
@@ -300,10 +340,68 @@
         margin-left: 15%;
         margin-right: 15%; 
         h1 {
-            font-size: 1.3em;
+            font-size: 1.2em;
         }
         p {
-            font-size: 1em;
+            font-size: 0.95em;
+        }
+    }
+    .chiffre-2018 {
+        margin-top: 4%;
+        margin-left: 15%;
+        padding-bottom: 10%;
+        width: 70%;   
+        h1 {
+            font-size: 1.3em;
+        }    
+        span {
+            font-size: 0.9em;
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+    .title-text {
+        font-size: 1em !important;
+    }
+    #presentation {
+        height: 22em;
+    }
+    #contact,#activites {
+        h3{
+            font-size: 0.9em;
+        }
+    }
+    p{
+        font-size: 0.5em
+    }
+    #img-icon {
+        height: 25px;
+    }
+    #chiffres-cles {
+        height: 13em;
+    }
+    .transform {
+
+        margin-left: 15%;
+        margin-right: 15%; 
+        h1 {
+            font-size: 0.9em;
+        }
+        p {
+            font-size: 0.65em;
+        }
+    }
+    .chiffre-2018 {
+        margin-top: 4%;
+        margin-left: 15%;
+        padding-bottom: 10%;
+        width: 70%;   
+        h1 {
+            font-size: 1.2em;
+        }    
+        span {
+            font-size: 0.8em;
         }
     }
 }
