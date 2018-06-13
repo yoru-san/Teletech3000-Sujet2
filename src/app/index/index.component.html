@@ -71,12 +71,12 @@
 
 <section id="chiffres-cles">
   <article class="chiffre-2018 center">  
-    <h1>Les&nbsp;<div class="bold">chiffres en 2018</div></h1>
+    <h1>Les&nbsp;<div class="bold">chiffres en {{numbers.year}}</div></h1>
     <div class="chiffres">
       <div class="container-chiffre-2018">  
         <div class="hexagon">
           <img src="../../assets/icons/hexagon-red.png" alt=""> 
-          <span>&nbsp;3</span>
+          <span>&nbsp;{{numbers.offices}}</span>
         </div>
         <div class="titre-chiffre">
           <p>Cabinets</p>
@@ -85,7 +85,7 @@
       <div class="container-chiffre-2018">
         <div class="hexagon">
           <img src="../../assets/icons/hexagon-yellow.png" alt="">
-          <span>86</span>
+          <span>{{numbers.consultants}}</span>
         </div>
         <div class="titre-chiffre">
           <p>Consultants</p>
@@ -94,8 +94,8 @@
       <div class="container-chiffre-2018">
         <div class="hexagon">
           <img class="hexagon" src="../../assets/icons/hexagon-blue.png" alt="">
-          <span>36</span>
-          <p id="euro">m€</p>
+          <span>{{numbers.turnover}}</span>
+          <p id="euro">{{numbers.scale}}{{numbers.currency}}</p>
         </div>
         <div class="titre-chiffre-3">
           <p>Chiffre d'affaire</p>
