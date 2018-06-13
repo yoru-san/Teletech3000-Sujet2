@@ -38,7 +38,7 @@ export class AuthService {
       this.changeAuthStatus(true);
       console.log("Logged in!");
       this.AuthStatus.subscribe(value => console.log(value));
-      this.router.navigateByUrl('/profile');
+      this.router.navigateByUrl('/');
     }
     else{
       console.log("Failed to log in");
