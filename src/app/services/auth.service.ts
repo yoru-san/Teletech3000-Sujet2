@@ -30,11 +30,6 @@ export class AuthService {
   }
 
   getUser(): Observable<any> {
-    this.http.post('https://b2-angular.firebaseio.com/kob2/user.json', {
-      name: "Test",
-      email: "a@a.com",
-      password: "root"
-    })
     return this.http.get('https://b2-angular.firebaseio.com/kob2/user.json');
   }
 
@@ -57,8 +52,8 @@ export class AuthService {
   }
 
   editUser(new_user){
-    this.http.post('https://b2-angular.firebaseio.com/kob2/user.json', new_user).subscribe(
-      response => console.log(response),
+    this.http.put('https://b2-angular.firebaseio.com/kob2/user.json', new_user).subscribe(
+      response => {this.router.navigateByUrl('/profile')},
       error => console.log(error)
     );
   }
