@@ -252,6 +252,8 @@
         }
         #img-icon {
             height: 50px;
+        }        span{
+            font-size: 1em            
         }
     }
     #chiffres-cles {
@@ -315,6 +317,9 @@
         }
         #img-icon {
             height: 40px;
+        }
+        span{
+            font-size: 0.8em            
         }
     }
     #chiffres-cles {
@@ -385,6 +390,9 @@
         #img-icon {
             height: 30px;
         }
+        span{
+            font-size: 0.6em            
+        }
     }
     #chiffres-cles {
         height: 14em;
@@ -405,21 +413,21 @@
         width: 65%;
         height: 8em;
         h1 {
-            font-size: 0.8em;
+            font-size: 0.7em;
         } 
         span {
-            font-size: 0.8em;
-            right: 1.8em;
+            font-size: 0.7em;
+            right: 1.9em;
             bottom: 0.9em; 
         }
         #euro {
-            font-size: 0.5em;
+            font-size: 0.4em;
             right: 1em;
-            bottom: 3.6em; 
+            bottom: 4.5em; 
         }  
         .hexagon {
             img{
-                height: 2em
+                height: 1.8em
             }
         }
         p {
@@ -470,25 +478,25 @@
         width: 65%;
         height: 6em;
         h1 {
-            font-size: 0.6em;
+            font-size: 0.3em;
         } 
         span {
-            font-size: 0.6em;
-            right: 1.8em;
-            bottom: 0.9em; 
+            font-size: 0.3em;
+            right: 2.2em;
+            bottom: 1.5em; 
         }
         #euro {
-            font-size: 0.25em;
-            right: 1em;
-            bottom: 4.2em; 
+            font-size: 0.02em;
+            right: 0.5em;
+            bottom: 4.8em; 
         }  
         .hexagon {
             img{
-                height: 1.45em
+                height: 1.3em
             }
         }
         p {
-            font-size: 0.6em;
+            font-size: 0.4em;
         }
     
         .titre-chiffre, .titre-chiffre-3 {
