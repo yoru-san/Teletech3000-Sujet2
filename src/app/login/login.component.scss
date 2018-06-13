@@ -1,5 +1,14 @@
 @import "../../styles.scss";
 
+
+form {
+    position: fixed;
+    top: 8.4%;
+    background-color: rgba(242, 242, 242, 0.9);
+    width: 20%;
+    padding: 0.5em;
+    margin-left: 79.5%;
+}
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -29,6 +38,4 @@ input[type=submit]:hover {
 div {
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 8em 35% 3em;
-    font-family: 'Montserrat', sans-serif;
 }
