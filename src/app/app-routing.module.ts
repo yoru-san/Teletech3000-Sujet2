@@ -13,12 +13,12 @@ const routes: Routes = [
   },
   {
     path: 'profile',
-    //canActivate: [AuthGuard],
+    // canActivate: [AuthGuard],
     component: ProfileComponent
   },
   {
     path: 'edit-profile',
-    // canActivate: AuthGuard,
+    // canActivate: [AuthGuard],
     component: ProfileEditComponent
   },
   {

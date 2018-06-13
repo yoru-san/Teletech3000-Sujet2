@@ -9,7 +9,7 @@ import { AuthService } from '../services/auth.service';
 export class HeaderComponent implements OnInit {
 
   private showLogin = false;
-  private loggedIn = false;
+  private logged = false;
   private name = null;
 
   constructor(
@@ -17,18 +17,13 @@ export class HeaderComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.Auth.AuthStatus.subscribe(value => {
-      this.loggedIn = value;
-      if (this.loggedIn){
-        this.showLogin = false;
-      }
-    });
 
-    if (this.loggedIn){
-      this.Auth.getUser().subscribe(response => {
-        this.name = response.name;
-      });
-    }
+    this.Auth.AuthStatus.subscribe(
+      value => {
+        this.logged = value;
+        console.log("Show profile: " + this.logged);
+      }
+    )
   }
 
   onConnectClick() {
